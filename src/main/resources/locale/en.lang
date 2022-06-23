@@ -1,0 +1,5 @@
+[fightsummary]
+header=§aFight Summary for <mob>:
+unsuccessful=§aThe fight lasted <time> and reached <percent> health
+successful=§aThe fight took <time>
+client=§7<name> did <damage> total damage
