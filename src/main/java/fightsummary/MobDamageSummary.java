@@ -85,7 +85,9 @@ public class MobDamageSummary {
 
         for (ServerClient client : clients) {
             for (GameMessage message : messages) {
-                client.sendChatMessage(message);
+                // We send the translated message, since it's possible the client does not have
+                // the proper translation keys
+                client.sendChatMessage(message.translate());
             }
         }
     }
